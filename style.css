@@ -210,9 +210,6 @@
  }
  
 
-/*  column s absolute */
-
-
 .habits-container{
     display:grid;
     grid-template-columns:repeat(3, 5% 45% 50%);
@@ -287,7 +284,6 @@
 .daily-container{
     display:grid;   
     grid-template-columns:repeat(2, 50% 50%);
-    /* grid-template-rows:repeat(2, 40% 60%); */
 
     padding-top:50px;
 }
@@ -295,8 +291,7 @@
 .daily-image{
     grid-area:1/1/3/1;
     width:100%;
-    height:70vh;
-    
+    height:70vh;    
 }
 
 .daily-list{
