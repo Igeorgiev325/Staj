@@ -1,7 +1,7 @@
 <h1>Flex & Grid Website Template</h1>
 
 <h2>App Demo</h2>
-<a href="template7waystobehappy.netlify.app">template7waystobehappy.netlify.app</a>
+<a href="https://template7waystobehappy.netlify.app">template7waystobehappy.netlify.app</a>
 <hr>
 
 <h2>What it does?</h2>
