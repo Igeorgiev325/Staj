@@ -10,6 +10,7 @@
 *{
     margin:0px;
     box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .nav{
@@ -40,6 +41,7 @@
 
     color:var(--white);
 
+    font-size:1.5rem; 
     padding:3rem;
 }
 
@@ -48,17 +50,14 @@
 }
 
 
-
-@media only screen and (max-width:600px){
-    .sevenways-text{
-        padding:2rem;
-        
-    }
-}
-
 @media only screen and (max-width:600px){
     .sevenways-container{
-        background-position:0% 100%;
+        background-position:20% 100%;
+        font-size:1.3rem;
+    }
+
+    .sevenways-container > p{
+        width:10rem;
     }
 }
 
