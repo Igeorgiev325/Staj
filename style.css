@@ -28,22 +28,26 @@
 }
 
 .sevenways-container{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-content:space-between;
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   justify-content:space-evenly;
     
     height:95vh;
     background-image:url('pictures/happy.jpg');
     background-size:cover;
     background-position:center;
-     
+
+    color:var(--white);
+
+    padding:3rem;
 }
 
-.sevenways-text{
-    
-    color:var(--white);
+.sevenways-container > p{
+    width:30rem;
 }
+
+
 
 @media only screen and (max-width:600px){
     .sevenways-text{
