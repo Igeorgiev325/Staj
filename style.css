@@ -219,7 +219,7 @@
 }
 
 .habits-image{
-   height:50vh;
+   height:auto;
 }
 
 @media only screen and (max-width: 600px){
@@ -227,41 +227,43 @@
         display:flex;
         flex-direction:column-reverse;
 
-        padding:1rem;
-        margin:1rem;
+        padding:0rem;
+        margin:0rem;
         gap:2rem;
     }
     .habits-image > img{
-        padding:0rem;
-        margin:0rem;
-        width:85vw;
-        height:45vh;
+      
+        width:100vw;
+    }
+    .habits-text{
+        margin:1rem;
+        padding:1rem;
     }
 }
 
 .daily-container{
-    display:grid;   
-    grid-template-columns:repeat(2, 50% 50%);
+    display:flex;
+    flex-direction:row;
+    gap:3rem;
 
-    padding-top:50px;
+    margin:5rem;
 }
 
-.daily-image{
-    grid-area:1/1/3/1;
-    width:100%;
-    height:70vh;    
+.daily-section{
+    display:flex;
+    flex-direction:column;
+    gap:3rem;
 }
 
-.daily-list{
-    grid-area:1/2/span 1/ span 1;
-    
+.daily-image > img{
+    height:50vh;
+    width:40vw;
 }
+
 ul{
-    background-color:var(--green);
-    width:14rem;
-    height:12rem;
-    
-    margin-left:1.8rem;
+    background:var(--green);
+    width:15rem;
+    padding:1rem;
     line-height:1.5rem;
     color:var(--white);
 }
@@ -272,26 +274,29 @@ ul li{
     padding:0.200rem;
 }
 
-
 .daily-text{
-    grid-area:2/2/span 1/ span 1;
-
-    display:grid;
-    width:80%;
-    margin-left:2rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
 }
 
 @media only screen and (max-width: 600px){
-    .daily-image{
-        grid-area:1/1/1/3;
+    .daily-container{
+       display:flex;
+       flex-direction:column;
+       padding:0rem;
+       margin:0rem;
+
+    }
+    .daily-image > img{
+        width:100vw;
     }
 }
 
 @media only screen and (max-width: 600px){
     .daily-list{
-        grid-area:2/1/3/ span 2;
        
-        margin:1rem;
+        
         margin-left:auto;
         margin-right:auto;
 
@@ -301,14 +306,15 @@ ul li{
 
 @media only screen and (max-width:600px){
     .daily-text{
-        grid-area:4/1/5/3;
+       
         margin-left:auto;
         margin-right:auto;
 
-        text-align:center;
+        text-align:left;
         padding:1rem;
     }
-    .daily-text button{
+
+    .daily-text button, h3{
         margin-left:auto;
         margin-right:auto;
     }
