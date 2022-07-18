@@ -295,8 +295,6 @@ ul li{
 
 @media only screen and (max-width: 600px){
     .daily-list{
-       
-        
         margin-left:auto;
         margin-right:auto;
 
@@ -322,28 +320,26 @@ ul li{
 
 
 .journal-section{
-    display:grid;
-    grid-template-columns:repeat(2, 60% 40%);
-
-    grid-column:1/span 2;
-
+    display:flex;
+    place-items:center;
+    justify-content:space-around;
+    gap:5rem;
     background-color:var(--lightgray);
 
-    
+    padding:3rem;
 }
 
-
 .journal-text{
-    grid-column-start:1;   
-    line-height:5rem;
-    padding:3rem;
 
+   display:flex;
+   flex-direction:column;
+   
+    line-height:5rem;
 }
 
  .journal-text-one{
     display:flex;
-    flex-direction:row;
-    padding-left:4rem;
+    flex-direction:row;    
 }
 
 .journal-text  h3 {
@@ -354,20 +350,16 @@ ul li{
 
 
  .journal-secondsection{
-    grid-column-start:2;
+    display:flex;
+    flex-direction:column;
+    place-items:center;
+    height:30rem;
+    width:40rem;
 
     background-color:var(--white);
-    width:80%;
-    height:90%;
-
-   margin-left:auto;
-   margin-right:auto;
-
-   margin-top:auto;
-   margin-bottom:auto;
 }
 
- .journal-image{
+ .journal-image > img{
     
     margin-top:2rem;
 
@@ -375,9 +367,6 @@ ul li{
     height:30%;
     border-radius:100%;
 
-    display:grid;
-    margin-left:auto;
-    margin-right:auto;
 }
 
 .journal-secondtext{
@@ -385,7 +374,7 @@ ul li{
     padding: 3rem;
 }
 
-.journal-image{
+.journal-image > img{
     
     width:200px;
     height:200px;
@@ -394,8 +383,9 @@ ul li{
 
 
 @media only screen and (max-width:600px){
-    .journal-container{
-        grid-area:1/1/1/3;  
+    .journal-section{
+        display:flex;
+        flex-direction:column;
     }
 }
 
@@ -403,20 +393,19 @@ ul li{
     .journal-text{
         padding:1rem;
         margin:0rem;
-        line-height:1.8rem;
-        height:auto;
+        line-height:2.2rem;
+        
     }
 }
 
 @media only screen and (max-width: 600px){
     .journal-secondsection{
-        grid-area:2/1/3/3;
-
+      width:85%;
     }
 }
 
 .subscribe-container{
-    /* height:42rem; */
+    
     background-color:var(--orange);
     color:var(--white);
     text-align:center;
