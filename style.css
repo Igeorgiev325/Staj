@@ -113,6 +113,10 @@
     padding:1rem;
 }
 
+.columns-text  p{
+    text-align:left; 
+}
+
 .columns-info{
     font-weight:bold;
     text-decoration:underline;
@@ -121,10 +125,13 @@
 }
 
 @media only screen and (max-width:600px){
+    .columns-container{
+        display:flex;
+    }
+    
     .columns-text{
         display:flex;
         flex-direction:column;
-       
     }
 }
 
