@@ -137,7 +137,7 @@
 
 .hobbies-section{
     display:flex;
-    place-content:center;
+     justify-content:center;
     gap:10rem;
  }
  
@@ -150,8 +150,9 @@
      padding:4rem;
  
      display:flex;
-     place-content:center;
-     place-items:center;
+     
+     justify-content:center;
+     align-items:center;
  }
  
  .person-image > img{
@@ -329,6 +330,7 @@ ul li{
 
         text-align:left;
         padding:1rem;
+        margin:1rem;
 
         height:18rem;
 
@@ -345,7 +347,6 @@ ul li{
 
 .journal-section{
     display:flex;
-    place-items:center;
     justify-content:space-around;
     gap:5rem;
     background-color:var(--lightgray);
@@ -376,7 +377,7 @@ ul li{
  .journal-secondsection{
     display:flex;
     flex-direction:column;
-    place-items:center;
+    align-items:center;
     height:30rem;
     width:40rem;
 
@@ -510,7 +511,6 @@ form > input{
    .grateful-element{
         display:flex;
         flex-direction:column;
-        place-content:center;
 
        background-color:var(--green);
       
@@ -572,10 +572,6 @@ form > input{
     width:25rem;
     text-align:center;
     color:var(--white);
-
-    /* position:absolute;
-    top:70%; */
-  
 }
 
 .forest-text p{
