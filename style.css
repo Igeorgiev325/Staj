@@ -257,7 +257,7 @@
 
 .daily-image > img{
     height:50vh;
-    width:40vw;
+    width:30vw;
 }
 
 ul{
@@ -277,7 +277,6 @@ ul li{
 .daily-text{
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
 }
 
 @media only screen and (max-width: 600px){
@@ -436,6 +435,7 @@ form > input{
     color:var(--white);
     background-color:var(--green);
     font-weight:bold;
+    cursor:pointer;
 }
 
 .subscribe-text{
@@ -448,6 +448,7 @@ form > input{
     display:flex;
     justify-content:center;
     gap:1rem;
+    cursor:pointer;
 }
 
 .possible-container{
@@ -525,16 +526,15 @@ form > input{
 }
 
 .forest-image{
-    height:37rem;
+    height:100vh;
     background-image:url('pictures/forest.jpg');
     background-repeat:no-repeat;
     background-size:cover;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
 
-    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+
 }
 
 .forest-text{
@@ -542,8 +542,8 @@ form > input{
     text-align:center;
     color:var(--white);
 
-    position:absolute;
-    top:70%;
+    /* position:absolute;
+    top:70%; */
   
 }
 
@@ -564,20 +564,14 @@ form > input{
     text-align:center;
 }
 
-.underline{
-    border-bottom:dotted;
-}
-
-
 button{
     width: 160px;
     height: 60px;
-    margin-top:2rem;
-    /* padding: 16px 32px;
-    margin: 100px; */
     color:var(--white);
     background-color: var(--orange);
     border:none;
     border-radius: 15px;
     cursor:pointer;
 }
+
+button:hover{color:var(--black);}
